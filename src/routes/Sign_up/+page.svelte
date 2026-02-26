@@ -1,3 +1,4 @@
+
 <style>
   #container {
     margin: 0;
@@ -8,7 +9,7 @@
     background: #fff8d7;
   }
 
-  .login {
+  .sign_up {
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -27,10 +28,9 @@
     border-radius: 6px;
   }
 
-  .button {
+  #button {
     width: 90%;
     padding: 10px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 6px;
     background: black;
@@ -38,25 +38,35 @@
     cursor: pointer;
   }
 
-  .button:hover {
+  #button:hover {
     opacity: 0.8;
   }
 
-  .link{
+  #link{
     display: flex;
     text-decoration: none; 
     color: white;
     width: 100%;
   }
 </style>
+
+<script>
+  import { goto } from "$app/navigation";
+  function Move_to_login(){
+    goto('/Login')
+  }
+</script>
+
 <div id="container">
-    <div class="login">
-        <h3>Login</h3>
+    <div class="sign_up">
+        <h3>Sign_up</h3>
         <form method="POST">
-          <input type="text" placeholder="아이디" id="inp_id" name="id">
+          <input type="text" placeholder="이메일" id="inp_id" name="email">
           <input type="password" placeholder="비밀번호" id="inp_pw" name="password">
-          <button class="button" type="submit">로그인</button>
+          <input type="text" placeholder="거주지" id="inp_home" name="home">
+          <button id="button" type="submit" on:click ={Move_to_login}>회원가입</button>
         </form>
-        <div class="button"><a href="/Sign_up" class="link">회원가입</a></div>
+        
     </div>
 </div>
+
