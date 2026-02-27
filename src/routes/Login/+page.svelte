@@ -53,8 +53,8 @@
     <div class="login">
         <h3>Login</h3>
         <form method="POST">
-          <input type="text" placeholder="아이디" id="inp_id" name="id">
-          <input type="password" placeholder="비밀번호" id="inp_pw" name="password">
+          <input type="text" placeholder="아이디" name="id">
+          <input type="password" placeholder="비밀번호" name="password">
           <button class="button" type="submit">로그인</button>
         </form>
         <div class="button"><a href="/Sign_up" class="link">회원가입</a></div>

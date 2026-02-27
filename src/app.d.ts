@@ -8,6 +8,9 @@ declare global {
 				user_id:Number
 			}
 		}
+		interface Window{
+			kakao?: any
+		}
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}

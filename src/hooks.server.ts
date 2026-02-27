@@ -8,7 +8,7 @@ export async function handle({ event, resolve }){
         )
 
         if(result.rows[0]){
-            event.locals.user = result.rows[0].user_id // 왜 오류?
+            event.locals.user = result.rows[0].user_id
         }
     }
     return resolve(event)

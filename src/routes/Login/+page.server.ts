@@ -33,6 +33,6 @@ export const actions = {
 
     cookies.set('session_id', sessionid, {path: '/'})
     
-    throw redirect(302, '/')
+    throw redirect(301, '/')
   }
 };

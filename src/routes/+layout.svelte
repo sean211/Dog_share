@@ -5,7 +5,7 @@
 	let { children } = $props();
 
 	export function load() {
-		throw redirect(302, '/Login');
+		throw redirect(301, '/Login');
 	}
 	
 </script>
